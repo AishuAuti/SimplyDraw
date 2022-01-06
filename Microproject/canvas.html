@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+        <title>Drawing Window</title>
+        <link rel='stylesheet' type='text/css' href='canvaStyle.css'>
+        <script src="https://kit.fontawesome.com/28e5fa47e4.js" crossorigin="anonymous"></script>
+         
+    </head>
+
+<body>
+    <header>
+        <div class="header" id="header">
+            <img src="Paint.png" alt="logo"/>
+            <h1>SimplyDraw</h1>
+            <button id="btnSave" onclick="saveWindow()">Save</button>
+            <!-- after clicking save, new child windown opens containing back button -->
+
+        </div>
+    </header>
+       <canvas id="myCanvas"></canvas>
+        <!-- <div id="saveArea">
+         <img id="canvasImg"/>
+         <h2>Right click to save....</h2>
+         <button id="btnBack">Back</button>
+     </div> -->
+        <div class="wrapper" id="wrapper">
+            <div class="icon color">
+                <div class="tooltip">
+                    Select
+                </div>
+                <span><i><input type="color" id="colorChange"></i></span>
+            </div>
+            <!-- <div class="icon Pensize"> -->
+                <div class="tooltip">
+                    <h4>Pen Size</h4>
+                </div>
+                <span><i><input type="range" id="penSize" step="2" min="1" max="100" value="5"></i></span>
+            <!-- </div> -->
+    
+         <div class="icon Pencil">
+            <div class="tooltip">
+                Pencil
+            </div>
+            <button  id="btnPencil">
+            <span><i class="fa fa-pencil-alt"></i></span>
+             </button>
+            <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\pencil.png" height="45px" align="center"></i></span> -->
+        </div>
+        <!-- <div class="icon  Brush">
+            <div class="tooltip">
+                Brush
+            </div>
+             <button  id="btnBrush">
+            <span><i class="fa fa-paint-brush"></i></span>
+             </button> -->
+             <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\paint-brush.png" height="45px" align="center"></i></span> -->
+        <!-- </div> -->
+       <!--  <div class="icon Text">
+            <div class="tooltip">
+                Text
+            </div>
+             <button  id="btnText">
+            <span><i class="fa fa-keyboard"></i></span>
+             </button> -->
+             <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\download.png" height="45px" align="center"></i></span> -->
+       <!--  </div> -->
+        
+        <div class="icon Bucket">
+            <div class="tooltip">
+                Fill
+            </div>
+            <button  id="btnBucket">
+            <span><i class="fa fa-fill-drip"></i></span>
+             </button>
+            <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\paint-bucket.png" width="45px" height="45px" align="center"></i></span> -->
+        </div>
+        <div class="icon Eraser">
+            <div class="tooltip">
+                Eraser
+            </div>
+            <button  id="btnEraser">
+            <span><i class="fa fa-eraser"></i></span>
+             </button>
+             <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\eraser.png" height="45px" align="center"></i></span> -->
+        </div>
+        <!-- <div class="icon Shapes">
+            <div class="tooltip">
+                Shapes
+            </div>
+            <button  id="btnshapes">
+            <span><i class="fa fa-shapes"></i></span>
+             </button> -->
+             <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\shape.png" height="45px" align="center"></i></span> -->
+        <!-- </div> -->
+        <div class="icon Clear">
+            <div class="tooltip">
+                Clear
+            </div>
+            <button  id="btnClear">
+            <span><i class="fa fa-broom"></i></span>
+             </button>
+             <!-- <span><i><img src="E:\Javascript\Microproject\Flaticon icons\cleaning.png" height="45px" align="center" onclick="clearCanvas()"></i></span> -->
+        </div>
+        <div class="icon Undo">
+            <div class="tooltip">
+                Undo
+            </div>
+             <button  id="btnUndo">
+            <span><i class="fa fa-undo"></i></span>
+             </button>
+             <!-- <span><i><img src= height="45px" align="center"></i></span> -->
+        </div>
+        <!-- <div class="icon Zoom">
+            <div class="tooltip">
+                Zoom
+            </div>
+             <button  id="btnZoom">
+            <span><i class="fa fa-search-plus"></i></span>
+             </button> -->
+             <!-- <button style=button-radious:50%;><span><i><img src="E:\Javascript\Microproject\Flaticon icons\zoom.png" height="45px" align="center"></i></span></button> -->
+       <!--  </div> -->
+        <!-- <div class="icon Trash">
+            <div class="tooltip">
+                Trash
+            </div>
+            <span><i class="fa fa-trash"></i></span>
+        </div> -->
+        </div>
+
+<script src="script.js"></script> 
+   
+</body>
+</html>
+
